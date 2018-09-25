@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/book"
+    android:padding="10dp"
+    tools:context=".fragment.IssueFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtissue"
+        android:text="Issue Book"
+        />
+    <EditText
+        android:layout_below="@+id/txtissue"
+        android:id="@+id/idstud"
+        android:hint="Enter ur id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_below="@+id/search"
+        android:hint="Enter stud name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Enter Book Name"
+        android:layout_below="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtbooks"/>
+    <EditText
+        android:id="@+id/date"
+        android:layout_below="@+id/edtbooks"
+        android:inputType="date"
+        android:hint="Enter Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:text="update" />
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
